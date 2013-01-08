@@ -4,7 +4,7 @@
 	generates surfaces
 **/
 
-importScripts("/debug/rise/rise.cat.js");
+importScripts("/debug/mope/rise.cat.js");
 
 // placeholder namespace for mope
 var M = {};
