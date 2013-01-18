@@ -21,9 +21,9 @@ M.anchor = {
 
 		this.texture = (function() {
 			var bmp = RISE.createBitmap(256);
-			bmp.walk(8, 0.05, toRGBA(0.8, 0.7, 0.4, 1), 0.95, 0.5, 0.5, 0.5);
-			bmp.sweep(3, 0.05, toRGBA(0.3, 0.9, 0.2, 1), 0.5);
-			bmp.walk(6, 0.1, toRGBA(0.9, 0.9, 0.2, 1), 0.5, 0.5, 0.5, 0.5);
+			bmp.walk(6, 0.05, toRGBA(0.8, 0.7, 0.4, 1), 0.95, 0.5, 0.5, 0.5);
+			bmp.sweep(2, 0.1, toRGBA(0.3, 0.9, 0.2, 1), 0.25);
+			bmp.walk(1, 0.1, toRGBA(0.9, 0.9, 0.2, 1), 0.5, 0.5, 0.5, 0.5);
 			return RISE.createTexture(GL, bmp);
 		})();
 

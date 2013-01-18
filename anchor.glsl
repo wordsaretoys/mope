@@ -17,8 +17,8 @@ varying float fog;
 void main(void) {
 	vec4 pos = modelview * vec4(position, 1.0);
 	gl_Position = projector * pos;
-	con = 0.25 * abs(normal);
-	tex = abs(mod(position, 1.0) - 0.5) + 0.5;
+	con = normal;
+	tex = abs(mod(position, 10.0) - 5.0) + 5.0;
 
 	float l = clamp(length(pos.xyz) / RADIUS, 0.0, 1.0);
 	bw = 1.0 - l;
